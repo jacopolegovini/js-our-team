@@ -23,3 +23,12 @@ img {
     align-items: center;
     justify-content: space-around;
 }
+
+.person-card div:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.person-card div:nth-child(3) {
+    font-style: italic;
+}
