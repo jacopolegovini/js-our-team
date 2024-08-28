@@ -13,12 +13,21 @@ const ourTeam = [
 ]
 
 
+// Crea le card
+for (let i = 0; i < ourTeam.length; i++) {
+    const personCard = document.createElement('div');
+    personCard.classList.add('person-card');
+    ourTeamElement.appendChild(personCard);
+}
+
+
+// Recupera le card dal DOM
+const personCardElement = document.querySelectorAll('.person-card');
 
 
 // Stampa in pagina
 for (let i = 0; i < ourTeam.length; i++) {
-    const person = ourTeam[i]
+    const person = ourTeam[i];
     const { firstName, role, photo } = person;
-        console.log(person.firstName)
-        ourTeamElement.innerHTML += `Nome: ${firstName}, ruolo, ${role}, foto: ${photo}<br>`;
+    personCardElement[i].innerHTML += `<img src="img/${photo}" alt="${photo}"> <div>${firstName}</div><div>${role}</div>`;
 }

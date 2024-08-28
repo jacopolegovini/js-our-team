@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+img {
+    height: 80%;
+}
+
+.our-team {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.person-card {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+}
