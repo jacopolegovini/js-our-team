@@ -31,3 +31,5 @@ for (let i = 0; i < ourTeam.length; i++) {
     const { firstName, role, photo } = person;
     personCardElement[i].innerHTML += `<img src="img/${photo}" alt="${photo}"> <div>${firstName}</div><div>${role}</div>`;
 }
+
+console.log(ourTeam[0]['photo'])
